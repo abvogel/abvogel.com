@@ -23,7 +23,7 @@ steps:
     sshEndpoint: 'Linode abvogel.com server'
     runOptions: 'commands'
     commands: |
-      bash -i
+      bash
       cd /var/www/html
       git pull
       hexo generate
