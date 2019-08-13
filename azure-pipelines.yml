@@ -21,4 +21,4 @@ steps:
   inputs:
     sshEndpoint: 'Linode abvogel.com server'
     runOptions: 'inline'
-    inline: 'cd /var/www/html/ && hexo generate && hexo publish'
+    inline: 'cd /var/www/html && hexo generate && hexo publish'
