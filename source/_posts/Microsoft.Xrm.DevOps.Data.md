@@ -7,11 +7,9 @@ categories:
 
 [![Build Status](https://dev.azure.com/MicrosoftXrmDevOpsData/Microsoft.Xrm.DevOps.Data/_apis/build/status/abvogel.Microsoft.Xrm.DevOps.Data?branchName=master)](https://dev.azure.com/MicrosoftXrmDevOpsData/Microsoft.Xrm.DevOps.Data/_build/latest?definitionId=1&branchName=master)
 
-# Microsoft.Xrm.DevOps.Data
 This library provides an easy way to generate **filtered** data compatible with the Configuration Data Migration Tool. These zip files can be used to push specific records between Dynamics 365 environments using the Dynamics 365 Package Deployer.
 
-# Microsoft.Xrm.DevOps.Data.PowerShell
-This wrapper uses the Microsoft.Xrm.DevOps.Data library providing a simple PowerShell interface.
+The Microsoft.Xrm.DevOps.Data.PowerShell wrapper uses the Microsoft.Xrm.DevOps.Data library providing a simple PowerShell interface to export data from Dynamics 365.
 
 ## Installing
 The PowerShell module has been posted to PowerShell Gallery. Install using their standard commands - 
