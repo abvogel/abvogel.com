@@ -21,4 +21,4 @@ steps:
   inputs:
     sshEndpoint: 'Linode abvogel.com server'
     runOptions: 'inline'
-    inline: 'bash -i ./refreshHexo.sh'
+    inline: 'bash -s ./refreshHexo.sh'
