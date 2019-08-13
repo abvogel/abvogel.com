@@ -17,14 +17,8 @@ steps:
     echo Add other tasks to build, test, and deploy your project.
     echo See https://aka.ms/yaml
   displayName: 'Run a multi-line script'
-
 - task: SSH@0
   inputs:
     sshEndpoint: 'Linode abvogel.com server'
-    runOptions: 'commands'
-    commands: |
-      bash
-      cd /var/www/html
-      git pull
-      hexo generate
-      hexo publish
+    runOptions: 'inline'
+    inline: 'bash -i ./refreshHexo.sh'
