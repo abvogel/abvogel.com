@@ -21,4 +21,4 @@ steps:
   inputs:
     sshEndpoint: 'Linode abvogel.com server'
     runOptions: 'inline'
-    inline: 'bash -s ./refreshHexo.sh'
+    inline: 'cd "/var/www/html" && git pull && hexo generate && hexo publish'
