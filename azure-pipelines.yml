@@ -12,7 +12,11 @@ pool:
 steps:
 - script: echo Hello, world!
   displayName: 'Run a one-line script'
-
+- task: SSH@0
+  inputs:
+    sshEndpoint: 'Linode abvogel.com server'
+    runOptions: 'inline'
+    inline: 'echo "$PATH"'
 - task: SSH@0
   inputs:
     sshEndpoint: 'Linode abvogel.com server'
