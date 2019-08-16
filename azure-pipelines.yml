@@ -19,6 +19,9 @@ steps:
     runOptions: 'inline'
     inline: |
       cd /var/www/html
+      pwd
       git pull
+      pwd
+      whoami
       hexo generate
       hexo publish
