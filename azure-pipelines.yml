@@ -18,7 +18,4 @@ steps:
     sshEndpoint: 'Linode abvogel.com server'
     runOptions: 'commands'
     commands: |
-      cd /var/www/html
-      git fetch pull
-      hexo generate
-      hexo publish
+      cd /var/www/html;git fetch pull;hexo generate;hexo publish
