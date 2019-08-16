@@ -17,8 +17,13 @@ steps:
     sshEndpoint: 'Linode abvogel.com server'
     runOptions: 'inline'
     inline: 'echo "$PATH"'
+
 - task: SSH@0
   inputs:
     sshEndpoint: 'Linode abvogel.com server'
-    runOptions: 'script'
-    scriptPath: '~/refreshHexo.sh'
+    runOptions: 'inline'
+    inline: |
+      cd /var/www/html
+      git pull
+      hexo generate
+      hexo publish
