@@ -16,12 +16,5 @@ steps:
 - task: SSH@0
   inputs:
     sshEndpoint: 'Linode abvogel.com server'
-    runOptions: 'inline'
-    inline: |
-      cd /var/www/html
-      pwd
-      git pull
-      id -u -n
-      hexo generate
-      ~/.nvm/versions/node/v12.8.0/bin/hexo generate
-      ~/.nvm/versions/node/v12.8.0/bin/hexo publish
+    runOptions: 'script'
+    scriptPath: '~/refreshHexo.sh'
