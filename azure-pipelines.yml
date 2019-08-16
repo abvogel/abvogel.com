@@ -22,6 +22,8 @@ steps:
       pwd
       git pull
       pwd
-      whoami
+      id -u -d
+      echo "$USER"
+      ls -la ~/.nvm/versions/node/v12.8.0/bin
       hexo generate
       hexo publish
