@@ -21,9 +21,7 @@ steps:
       cd /var/www/html
       pwd
       git pull
-      pwd
-      id -u -d
-      echo "$USER"
-      ls -la ~/.nvm/versions/node/v12.8.0/bin
+      id -u -n
       hexo generate
-      hexo publish
+      ~/.nvm/versions/node/v12.8.0/bin/hexo generate
+      ~/.nvm/versions/node/v12.8.0/bin/hexo publish
