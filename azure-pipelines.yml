@@ -19,6 +19,6 @@ steps:
     runOptions: 'commands'
     commands: |
       cd /var/www/html
-      fetch pull
+      git fetch pull
       hexo generate
       hexo publish
