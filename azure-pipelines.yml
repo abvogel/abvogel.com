@@ -16,11 +16,9 @@ steps:
 - task: SSH@0
   inputs:
     sshEndpoint: 'Linode abvogel.com server'
-    runOptions: 'inline'
-    inline: 'cd "/var/www/html" && git pull'
-
-- task: SSH@0
-  inputs:
-    sshEndpoint: 'Linode abvogel.com server'
-    runOptions: 'inline'
-    inline: 'cd "/var/www/html" && hexo generate'
+    runOptions: 'commands'
+    commands: |
+      cd /var/www/html
+      fetch pull
+      hexo generate
+      hexo publish
